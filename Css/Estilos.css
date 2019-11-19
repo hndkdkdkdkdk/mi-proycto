@@ -1,0 +1,202 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background: lightblue;
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 15px;
+}
+
+header{
+	max-width: 1000px;  	/* Probar con height */
+	min-height: 130px;
+	margin: 0 auto;
+	background: linear-gradient(black, lightgreen);
+}
+
+header h2{
+	color: blue;
+	text-align: center;
+	padding-top: 30px;
+	font-size: 45px;
+	text-shadow: 3px 3px black;
+}
+
+#logo{
+	float: left;
+	margin-top: 5px;
+	margin-left: 5px;
+	animation: 2s entradalogo 1;
+}
+
+@keyframes entradalogo{
+	0%{
+		transform: translate(-100px);
+	}
+}
+
+#logo1{
+	float: right;
+	margin-top: 5px;
+	margin-right: 5px;
+}
+
+#menu-h{
+	max-height: 1000px;
+	min-height: 50px;
+	background: linear-gradient(yellow, blue);
+	margin: 0 auto;
+	text-decoration: overline;
+}
+
+#menu-h ul{
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+	padding: 2px;
+}
+
+#menu-h a{
+	color: whitesmoke;
+	display: block;
+	padding: 15px;
+	text-decoration: none;
+	background: black;
+	font-family: algerian;
+	font-size: 10px;
+}
+
+#menu-h ul ul{
+	display: none;
+	position: absolute;
+}
+
+#menu-h ul li:hover ul{
+	display: block;
+	background: blue;
+}
+
+#menu-h a:hover{
+	background: white;
+	color: blue;
+	display: block;
+	padding: 15px;
+	text-decoration: none;
+}
+
+#banner{
+	max-width: 1000px;
+	min-height: 700px;
+	background: white;
+	margin: 0 auto;
+}
+
+#contenedor{
+	max-width: 1000px;
+	min-height: 500px;
+	background: white;
+	margin: 0 auto;
+}
+
+#menu-v{
+	width: 300px;
+	min-height: 700px;
+	background: lightgrey;
+	float: left;
+}
+
+#menu-v a:hover Img{
+	animation: 1s rotacion 1;
+}
+
+@keyframes rotacion{
+	0%{
+		transform: rotate(270deg);
+	}
+}
+
+#menu-v ul{
+	list-style: none; /* viñeta */
+	padding: 10px;
+}
+
+#menu-v a{
+	display: block;
+	color: white;
+	background: linear-gradient(lightgreen, black);
+	padding: 20px;
+	text-decoration: overline;
+	border: 5px solid blue;
+	margin-bottom: 20px;
+	border-radius: 20px 0px 20px 0px;
+	font-family: Times New Roman;
+	font-size: 20px;
+	text-indent: 2px;
+}
+
+#menu-v a:hover{
+	background: linear-gradient(blue, yellow);
+	color: yellow;
+}
+
+#contenido{
+	width: 1000px;
+	min-height: 500px;
+	background: aqua;
+	float: right;
+	padding: 15px;
+	box-sizing: border-box;
+}
+
+#contenido h2{
+	text-align: center;
+	margin-bottom: 30px
+}
+
+#contenido p{
+	margin-bottom: 15px;
+	font-family: Times New Roman;
+	font-size: 16px;
+	text-align: justify;
+}
+
+.social ul li{
+	background: yellow;
+	width: 25px;
+	height: 1.5em;
+	align-content: center;
+	position: inherit;
+	left: auto;
+	padding: 5px;
+	top: 360px;
+	list-style-position: inside;
+	list-style-type: none;
+}
+
+.img-izq{
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 5px;
+	width: 300px;
+	padding: 8px;
+}
+
+footer{
+	max-width: 1000px;
+	min-height: 130px;
+	background: black;
+	margin-top: 0 auto;
+	border-radius: 0px 0px 20px 20px;
+	text-align: center;
+	font-size: 20px;
+	color: white;
+	padding-top: 20px;
+	text-decoration: none;
+	letter-spacing: 2px;
+	word-spacing: 5px;
+	line-height: 1.5;
+	text-shadow: 3px 3px black;
+}
